@@ -1,0 +1,12 @@
+{
+  "SUCCESS": "Success",
+  "PATH_SUCCESS": "data send successfully",
+  "DEFAULT": "Something Went Wrong",
+  "DUPLICATE": "Duplicate entry.",
+  "APP_ERROR": "Application error occurred.",
+  "INVALID_OBJECT_ID": "Invalid Object Id",
+  "ALREADY_EXIST_ADMIN": "Admin User already exists",
+  "ALREADY_EXIST_USER": "User Already Exists",
+  "INVALID_TOKEN": "Invalid Token",
+  "USER_NOT_FOUND": "No Such User"
+}

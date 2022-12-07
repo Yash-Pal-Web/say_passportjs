@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SayWah</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/public/assets/img/logoBG.png" rel="icon">
+  <link href="/public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/public/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="/public/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="/public/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/public/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/public/assets/css/style.css" rel="stylesheet">
+  <link href="/public/assets/css/main.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"></script>
+  
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.4.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main>
+    <div class="container-fluid" id="grad1">
+      <div class="row justify-content-center mt-0">
+          <div class="col-11 col-sm-9 col-md-7 col-lg-4 text-center p-0 mt-3 mb-2">
+              <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+          <div class="saywah_logo">
+            <img src="/public/assets/img/logoBG.png">
+          </div>
+                  <h2><strong>Create an Account</strong></h2>
+                  <p>Enter your personal details to create account</p>
+                  <div class="row">
+                      <div class="col-md-12 mx-0">
+                          <form id="msform" action="/googleauth/google">
+                              <ul id="progressbar">
+                                  <li class="active" id="account"><strong>Login</strong></li>
+                                  <li id="personal"><strong>Confirmation</strong></li>
+                                  <li id="payment"><strong>KYC</strong></li>
+                                  <li id="confirm"><strong>Payments</strong></li>
+                                  <li id="confirm"><strong>Finish</strong></li>
+                              </ul>
+                              <fieldset>
+                                  <div class="form-card">
+                                      <!-- <h2 class="fs-title">Personal Detail:-</h2>
+                                      <div class="col-12">
+                                        <input type="text" name="name" class="form-control" id="yourName" placeholder="Your Name" required>
+                                        <div class="invalid-feedback">Please, enter your name!</div>
+                                      </div>
+                    
+                                      <div class="col-12">
+                                        <input type="text" name="phone" class="form-control" id="yourPhone"  placeholder="Your Phone Number" required>
+                                        <div class="invalid-feedback">Please enter a valid phone number!</div>
+                                      </div>
+                    
+                    
+                    
+                    
+                                      <div class="col-12">
+                                        <input type="email" name="email" class="form-control"  placeholder="Your Email" id="yourEmail" required>
+                                        <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                      </div>
+                    
+                    
+                    
+                    
+                                      <div class="col-12">
+                                        <label for="yourAddress" class="form-label">Address</label>
+                                        <div class="input-group has-validation">
+                    
+                                          <textarea type="text" name="address" class="form-control" id="yourAddress" required></textarea>
+                                          <div class="invalid-feedback">Please choose a username.</div>
+                                        </div>
+                                      </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                                      <div class="col-12">
+                    
+                    
+                                        <div class="formGroup">
+                                          <input type="password" name="password" class="form-control" placeholder="Password" id="yourPassword" required>
+                                          <span class="input-group-text" id="showHideButton" onclick="myFunction()">Hide</span>
+                                        </div>
+                                        <div class="invalid-feedback">Please enter your password!</div>
+                                      </div>
+                    
+                                      <div class="col-12">
+                                        <div class="form-check">
+                                          <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                                          <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and
+                                              conditions</a></label>
+                                          <div class="invalid-feedback">You must agree before submitting.</div>
+                                        </div>
+                                      </div> -->
+                                      <!-- <div class="col-12">
+                                        <button class="createAct btn btn-primary w-100" type="submit" onclick="signup()">Create Account</button>
+                                      </div> -->
+                    
+                                      <div class="col-12 ml-auto mr-auto;" style="text-align:center;">
+                                        <button class="googleLogin btn btn-primary w-100" type="submit">
+                                          <i class="fa fa-google" aria-hidden="true"></i> Login
+                                          with Google
+                                        </button>
+                                        <!-- <div class="didivderSignup"><span>OR</span></div>
+                                        <button class="googleLogin driverSogmup btn btn-primary w-100" type="submit">
+                                           Driver Signup
+                                        </button> -->
+                                      </div>
+                                      <!-- <div class="col-12">
+                                        <p class="small mb-0">
+                                          Don't have account?
+                                          <a href="/admin/register">Create an account</a>
+                                        </p>
+                                      </div>
+                                      <div class="col-12">
+                                        <p class="small mb-0">Already have an account? <a href="/admin/login">Log in</a></p>
+                                      </div> -->
+                                    </div>
+                                    <div class="loginPrevbtn">
+                                      <input type="button" name="next" class="next action-button" value="Next Step"/>
+                                    </div>
+                              </fieldset>
+                              <fieldset class="detailCon">
+                                  <div class="form-card">
+                                  <h2 class="fs-title">Detail Confirmation:-</h2>
+                                  <div class="proileCon">			
+                                    <div class="profileKYC">
+                                      <div class="profileImg">
+                                        <label class="-label" for="file">
+                                        <i class="fa fa-camera" aria-hidden="true"></i>
+                                        <span>Change Image</span>
+                                        </label>
+                                        <input id="file" type="file" onchange="loadFile(event)"/>
+                                        <img src="/public/assets/img/pImg.jpg" id="output" />
+                                      </div>
+                                      <!-- <button type="button">KYC</button> -->
+                                    </div>
+                                    <div class="profileData">
+                                    <input type="email" name="email" value="sudhir.xor@gmail.com" readonly />
+                                    <input type="text" name="uname" value="Sudhir">
+                                    <input type="text" name="phonenumber" value="9876543210">
+                                    </div>
+                                  </div>
+                                </div>
+                                  <div class="loginPrevbtn">
+                                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                                    <input type="button" name="next" class="next action-button" value="Next Step"/>
+                                  </div>
+                              </fieldset>
+                              <fieldset>
+                                  <div class="form-card">
+                                      <h2 class="fs-title">KYC:-</h2>
+
+                                  </div>
+                                  <div class="loginPrevbtn">
+                                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                                    <input type="button" name="next" class="next action-button" value="Next Step"/>
+                                  </div>
+                                </fieldset>
+                                <fieldset>
+                                  <div class="form-card">
+                                      <h2 class="fs-title">Payment Information:-</h2>
+                                      <div class="radio-group">
+
+                                    <div class='radioGrp' data-value="credit">
+                                      <input class='radio' data-value="credit" type="radio" id="test1" name="radio-group" checked>
+                                      <label for="test1">Credit Card</label>
+                                    </div>
+                                    <div class='radioGrp' data-value="paypal">
+                                      <input type="radio" id="test2" name="radio-group">
+                                      <label for="test2">PayPal</label>
+                                    </div>
+                                          <br>
+                                      </div>
+                                      <label class="pay">Card Holder Name*</label>
+                                      <input type="text" name="holdername" placeholder=""/>
+                                      <div class="row">
+                                          <div class="col-9">
+                                              <label class="pay">Card Number*</label>
+                                              <input type="text" name="cardno" placeholder=""/>
+                                          </div>
+                                          <div class="col-3">
+                                              <label class="pay">CVC*</label>
+                                              <input type="password" name="cvcpwd" placeholder="***"/>
+                                          </div>
+                                      </div>
+                                      <div class="row mb-3">
+                                          <div class="col-5">
+                                              <label class="pay">Expiry Date*</label>
+                                          </div>
+                                          <div class="col-7">
+                                              <select class="list-dt" id="month" name="expmonth">
+                                                  <option selected>Month</option>
+                                                  <option>January</option>
+                                                  <option>February</option>
+                                                  <option>March</option>
+                                                  <option>April</option>
+                                                  <option>May</option>
+                                                  <option>June</option>
+                                                  <option>July</option>
+                                                  <option>August</option>
+                                                  <option>September</option>
+                                                  <option>October</option>
+                                                  <option>November</option>
+                                                  <option>December</option>
+                                              </select>
+                                              <select class="list-dt" id="year" name="expyear">
+                                                  <option selected>Year</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                  </div>
+                  <div class="loginPrevbtn">
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="button" name="make_payment" class="next action-button" value="Confirm"/>
+                  </div>
+                              </fieldset>                          
+                              <fieldset>
+                                  <div class="form-card">
+                                      <h2 class="fs-title text-center">Success !</h2>
+                                      <div class="row justify-content-center">
+                                          <div class="col-3">
+                                              <img src="/public/assets/img/check.png" class="fit-image">
+                                          </div>
+                                      </div>
+                                      <div class="row justify-content-center">
+                                          <div class="col-12 text-center">
+                                              <h5 class="thankYoumsg">You Have Successfully Signed Up</h5>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </fieldset>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="d-flex justify-content-center py-4">
+                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                  <img src="/public/assets/img/logo.png" alt="">
+                  <span class="d-none d-lg-block">SayWah</span>
+                </a>
+              </div>
+
+              <div class="card mb-3">
+
+                <div class="card-body">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
+                    <p class="text-center small">Enter your personal details to create account</p>
+                  </div>
+
+
+                 
+
+
+
+
+                  <div class="col-12">
+                    <label for="yourName" class="form-label">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="yourName" required>
+                    <div class="invalid-feedback">Please, enter your name!</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="yourPhoneNumber" class="form-label">Your Phone Number</label>
+                    <input type="text" name="phone" class="form-control" id="yourPhone" required>
+                    <div class="invalid-feedback">Please enter a valid phone number!</div>
+                  </div><br>
+
+
+
+
+                  <div class="col-12">
+                    <label for="yourEmail" class="form-label">Your Email</label>
+                    <input type="email" name="email" class="form-control" id="yourEmail" required>
+                    <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                  </div>
+
+
+
+
+                  <div class="col-12">
+                    <label for="yourAddress" class="form-label">Address</label>
+                    <div class="input-group has-validation">
+
+                      <textarea type="text" name="address" class="form-control" id="yourAddress" required></textarea>
+                      <div class="invalid-feedback">Please choose a username.</div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="col-12">
+                    <label for="yourPassword" class="form-label">Password</label>
+
+
+                    <div class="formGroup">
+                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                      <span class="input-group-text" id="showHideButton" onclick="myFunction()">Hide</span>
+                    </div>
+                    <div class="invalid-feedback">Please enter your password!</div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                      <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and
+                          conditions</a></label>
+                      <div class="invalid-feedback">You must agree before submitting.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100" type="submit" onclick="signup()">Create Account</button>
+                  </div> <br>
+
+                  <div class="col-12">
+                    <button class="googleLogin btn btn-primary w-100" type="submit">
+                      <i class="fa fa-google" aria-hidden="true"></i> Login
+                      with Google
+                    </button>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="small mb-0">
+                      Don't have account?
+                      <a href="/admin/register">Create an account</a>
+                    </p>
+                  </div>
+                  </form>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="col-12">
+                <p class="small mb-0">Already have an account? <a href="/admin/login">Log in</a></p>
+              </div>
+              </form>
+
+            </div>
+          </div>
+
+
+        </div>
+    </div> -->
+    </div>
+
+    </section>
+
+    </div>
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/public/assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="/public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/public/assets/vendor/chart.js/chart.min.js"></script>
+  <script src="/public/assets/vendor/echarts/echarts.min.js"></script>
+  <script src="/public/assets/vendor/quill/quill.min.js"></script>
+  <script src="/public/assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="/public/assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="/public/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/public/assets/js/main.js"></script>
+
+
+  <script src="/public/assets/js/common.js"></script>
+
+</body>
+
+</html>
